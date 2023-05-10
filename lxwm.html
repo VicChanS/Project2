@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>联系我们</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- <link rel="stylesheet" href="css/fjyd.css" /> -->
+    <link rel="stylesheet" href="css/gyjl.css" />
+    <link rel="stylesheet" href="css/lxwm.css" />
+  </head>
+
+  <body>
+    <!-- 导航开始 -->
+
+    <header>
+      <a href="#" class="logo"
+        >鲸落<span class="glyphicon glyphicon-tint"></span
+      ></a>
+      <div class="navbut" onclick="togoleMenu()"></div>
+      <ul class="navul">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="fjyd.html">房间预订</a></li>
+        <li><a href="fjjd.html">附近景点</a></li>
+        <li><a href="lxwm.html">联系我们</a></li>
+        <li><a href="gyjl.html">关于鲸落</a></li>
+        <li id="dl">登录</li>
+      </ul>
+    </header>
+    <!-- 导航结束 -->
+
+    <!-- 登录开始 -->
+
+    <div class="msk">
+      <div class="butt">
+        <button class="glyphicon glyphicon-remove" id="qx"></button>
+        <div class="zhu tab">
+          <input type="text" placeholder="用户名" />
+          <input type="text" placeholder="密码" />
+          <button>登录</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 登录结束 -->
+
+    <!-- banner开始 -->
+
+    <div class="banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/banner01.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/banner02.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/banner03.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/banner04.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/banner05.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/banner06.jpg" />
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <!-- banner结束 -->
+
+    <!-- 联系开始 -->
+    <div class="container lxus">
+      <div class="row">
+        <div class="col-md-2 wow slideInLeft">
+          <p>
+            <span>我们的联系方式</span>
+          </p>
+          <p>
+            <span>CONTACT US</span>
+          </p>
+        </div>
+
+        <div class="col-md-5 col-sm-6">
+          <h3 class="wow slideInDown">鲸落民宿</h3>
+          <p class="wow slideInLeft">
+            营国内地接、入境接待国内出游、国际出境游、代办签证、修学旅行、商务考察、会务接待等业务项目。
+          </p>
+          <p class="wow slideInRight">旅游全程服务，减少您的出游麻烦。</p>
+        </div>
+
+        <div class="col-md-5 col-sm-6 wow slideInRight">
+          <p>
+            <button class="glyphicon glyphicon-earphone"></button>
+            手机：+8613321638290
+          </p>
+          <p>
+            <button class="glyphicon glyphicon-phone-alt"></button>
+            电话：0779-0999-9990
+          </p>
+          <p>
+            <button class="glyphicon glyphicon-map-marker"></button>
+            民宿地址：涠洲岛盛塘村520号
+          </p>
+          <p>
+            <button class="glyphicon glyphicon-envelope"></button>
+            邮箱：2404000625@qq.com
+          </p>
+        </div>
+      </div>
+
+      <div class="cenimg">
+        <iframe src="map.html"></iframe>
+      </div>
+    </div>
+    <!-- 联系结束 -->
+
+    <!-- 底部开始 -->
+    <div class="dibu">
+      <div class="container">
+        <h3 class="wow slideInDown">联系我们 / CONTACT us</h3>
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8">
+            <div class="row wow slideInLeft">
+              <div class="col-sm-6">民宿地址：涠洲岛盛塘村520号</div>
+              <div class="col-sm-6">手机：+8613321638290</div>
+            </div>
+            <div class="row wow slideInRight">
+              <div class="col-sm-6">电话：0779-0999-9990</div>
+              <div class="col-sm-6">邮箱：2404000625@qq.com</div>
+            </div>
+          </div>
+          <div class="col-sm-2"></div>
+        </div>
+
+        <h4 class="wow fadeInUp">关注鲸落民宿</h4>
+        <div class="gz">
+          <img src="images/关注.jpg" class="wow fadeInUp" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部结束 -->
+
+    <script>
+      // 导航
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      function togoleMenu() {
+        const navbut = document.querySelector(".navbut");
+        const navul = document.querySelector(".navul");
+        navbut.classList.toggle("active");
+        navul.classList.toggle("active");
+      }
+    </script>
+
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/wow.js"></script>
+
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      //轮播图
+      (function () {
+        $("#dl").click(function () {
+          $(".msk").show();
+          $(".butt").show();
+        });
+
+        $("#qx").click(function () {
+          $(".msk").hide();
+          $(".butt").hide();
+        });
+
+        var swiper = new Swiper(".swiper-container", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      })();
+    </script>
+  </body>
+</html>
